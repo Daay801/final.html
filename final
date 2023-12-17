@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>鸚鵡世界</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #555;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .slideshow-container {
+            max-width: 800px;
+            position: relative;
+            margin: auto;
+        }
+
+        .mySlides {
+            display: none;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        p {
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>歡迎來到鸚鵡世界</h1>
+    </header>
+
+    <nav>
+        <a href="#home">首頁</a>
+        <a href="#about">關於鸚鵡</a>
+        <a href="#gallery">圖片集</a>
+        <a href="#info">相關資訊</a>
+        <a href="#contact">聯絡我們</a>
+    </nav>
+
+    <div class="slideshow-container">
+        <div class="mySlides">
+            <img src="https://truth.bahamut.com.tw/s01/202112/a6abe7a51cf87f30f501eed490749b26.JPG" alt="鸚鵡圖片1">
+        </div>
+        <div class="mySlides">
+            <img src="https://img.ltn.com.tw/Upload/playing/page/2020/03/22/200322-22737-08-FwTG5.jpg" alt="鸚鵡圖片2">
+        </div>
+        <div class="mySlides">
+            <img src="https://i1.kknews.cc/A4IUVfhcm3GjlI_Ax6OZhWp3zejrmYYsdnDTHT70kpU0sCVknAjBffZzUYez/0.jpg" alt="鸚鵡圖片3">
+        </div>
+    </div>
+
+    <section id="home">
+        <h2>歡迎來到鸚鵡的家</h2>
+        <p>在這裡，你將找到有關鸚鵡的豐富資訊和美麗的圖片。</p>
+    </section>
+
+    <section id="about">
+        <h2>關於鸚鵡</h2>
+        <p>鸚鵡是一種智慧、善解人意的寵物，它們有豐富的羽毛色彩和獨特的叫聲。</p>
+    </section>
+
+    <section id="gallery">
+        <h2>圖片集</h2>
+
+        <img src="https://i1.kknews.cc/EtU1sQ9NYSaRzJGNFboH_pMYvQgzb9obCMVAH9XfRxUu5lPTPR02I8YS9sQh/0.jpg" alt="鸚鵡圖片">
+ 	<img src="https://i1.kknews.cc/XZHV7__obURxraTJ8LpULuaMQdnb3LPTq7Z7kU2FE8tpo7DczbdtFnUZ55T1/0.jpg" alt="鸚鵡圖片">
+ 	<img src="https://i1.kknews.cc/_QST5e5eQZMPOttk8PDPvIU58DURoMXs8qycRFJSkl_ANPCB21sblQy0wMdi/0.jpg" alt="鸚鵡圖片">
+    </section>
+
+    <section id="info">
+        <h2>相關資訊</h2>
+        <p>鸚鵡是一種智慧且社交性強的鳥類，它們屬於鸚鵡目，擁有五彩繽紛的羽毛，並且以其聰明和善解人意的特質而受到人們的喜愛。以下是對鸚鵡的一些基本介紹：
+
+外貌特徵：
+羽毛色彩： 鸚鵡的羽毛色彩豐富多彩，包括紅色、藍色、綠色、黃色等。不同種類的鸚鵡擁有獨特的羽毛顏色和圖案。
+嘴巴： 鸚鵡的嘴巴非常強壯，適合咬斷各種種子、果實和堅果。嘴巴的形狀也因不同種類而異。
+智力和學習能力：
+聰明： 鸚鵡以其高度的智力而聞名，它們能夠學會模仿人類語言、聲音和動作，甚至理解一些簡單的指令。
+學習： 鸚鵡對於學習新技能和表演各種動作都非常敏感，使牠們成為優秀的寵物。
+社交性：
+群體生活： 在野外，鸚鵡通常以群體的方式生活，並展現強烈的社交性。牠們喜歡與同伴一起活動，並在互動中表現出友好和好奇心。
+飲食習慣：
+種子、果實和堅果： 鸚鵡主要以種子、果實和堅果為食，並且在野外會覓食各種植物的果實和種子。
+飼養注意事項：
+社交需求： 由於鸚鵡強烈的社交需求，飼主應該花足夠的時間陪伴牠們，提供豐富的玩具和刺激，以防止孤獨和行為問題。
+均衡飲食： 提供均衡的飲食，包括各種種子、新鮮水果、蔬菜和堅果，以確保鸚鵡獲得足夠的營養。
+總的來說，鸚鵡是極具魅力和活力的寵物，它們可以成為家庭的一員，並帶來歡笑和愉悅。</p>
+    </section>
+
+    <section id="contact">
+        <h2>聯絡我們</h2>
+        <p>有任何問題或建議？請聯絡我們。</p>
+    </section>
+
+    <footer>
+        &copy; 2023 鸚鵡世界 | 現在時間： <span id="current-time"></span>
+    </footer>
+
+    <script>
+        // 顯示當下時間
+        function updateTime() {
+            var currentTime = new Date();
+            var hours = currentTime.getHours();
+            var minutes = currentTime.getMinutes();
+            var seconds = currentTime.getSeconds();
+            document.getElementById('current-time').innerHTML = hours + ':' + minutes + ':' + seconds;
+        }
+
+        setInterval(updateTime, 1000);
+    </script>
+
+</body>
+</html>
