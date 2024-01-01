@@ -15,13 +15,13 @@
     <style>
         * {
             margin: 0;
-            color: #3E7E99; /* 修改文字顏色 */
+            color: #3E7E99; 
             text-align: center;
         }
 
         /* top */
         .top {
-            background-color: #F7D86E; /* 修改頂部背景顏色 */
+            background-color: #F7D86E; 
         }
 
         .top .container {
@@ -48,7 +48,7 @@
 
         .top .top-nav a {
             text-decoration: none;
-            color: #3E7E99; /* 修改導覽文字顏色 */
+            color: #3E7E99; 
         }
 
         /* nav */
@@ -108,7 +108,7 @@
 
         /* slider */
         .slider {
-            background-color: #222; /* 修改輪播區塊背景顏色 */
+            background-color: #222;
         }
 
         /* banner*/
