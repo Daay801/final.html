@@ -1,157 +1,306 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>鸚鵡世界</title>
+    <meta charset="utf-8">
+    <title>鸚鵡介紹</title>
+    <link href="https://cdn.bootcss.com/flexslider/2.6.3/flexslider.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/flexslider/2.6.3/jquery.flexslider-min.js"></script>
+    <script>
+        $(window).load(function () {
+            $('.flexslider').flexslider({
+                animation: "slide",
+                rtl: true
+            });
+        });
+    </script>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        * {
+            margin: 0;
+            color: #3E7E99; /* 修改文字顏色 */
+            text-align: center;
+        }
+
+        /* top */
+        .top {
+            background-color: #F7D86E; /* 修改頂部背景顏色 */
+        }
+
+        .top .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+        }
+
+        .top .logo {
+            font-size: 35px;
+            font-weight: bold;
+        }
+
+        .top .logo img {
+            width: 100px;
+            vertical-align: middle;
+        }
+
+        .top .top-nav {
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        .top .top-nav a {
+            text-decoration: none;
+            color: #3E7E99; /* 修改導覽文字顏色 */
+        }
+
+        /* nav */
+        .nav {
+            background-color: #333;
+            display: flex;
+            justify-content: center;
+        }
+
+        .nav ul {
+            list-style-type: none;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-        }
-
-        header {
+            overflow: hidden;
             background-color: #333;
-            color: #fff;
-            padding: 10px;
-            text-align: center;
         }
 
-        nav {
-            background-color: #555;
-            padding: 10px;
-            text-align: center;
+        .nav li {
+            float: left;
         }
 
-        nav a {
-            color: #fff;
+        .nav li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
             text-decoration: none;
-            margin: 0 10px;
         }
 
-        .slideshow-container {
-            max-width: 800px;
-            position: relative;
-            margin: auto;
+        .nav li a:hover {
+            background-color: #111;
         }
 
-        .mySlides {
-            display: none;
+        .dropdown:hover .dropdown-content {
+            display: block;
         }
 
-        img {
-            width: 100%;
-            height: auto;
-        }
-
-        section {
-            padding: 20px;
-            text-align: center;
-        }
-
-        footer {
+        li.dropdown:hover {
             background-color: #333;
-            color: #fff;
-            padding: 10px;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 160px;
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        /* slider */
+        .slider {
+            background-color: #222; /* 修改輪播區塊背景顏色 */
+        }
+
+        /* banner*/
+        .banner {
+            background-image: linear-gradient(#ABDCFF, #0396FF);
+            padding: 30px;
+        }
+
+        .banner h1 {
+            padding: 20px;
+        }
+
+        /* cafe*/
+        .cafe {
+            display: block;
+            justify-content: center;
+            background-color: #FFEBCD; /* 修改貓咪介紹區塊背景顏色 */
+            padding: 40px;
+        }
+
+        .cafe h2 {
+            font-size: 25px;
+            color: #323334;
+            padding-bottom: 40px;
+        }
+
+        .cafe .container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .cafe .cat {
+            display: block;
+            text-decoration: none;
+        }
+
+        .cafe .cat img {
+            height: 200px;
+            width: 200px;
+        }
+
+        .cafe .cat h3 {
+            color: white;
+            background-color: rgba(39, 40, 34, 0.5);
             text-align: center;
         }
 
-        h2 {
-            color: #333;
+        /* contact*/
+        .contact {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            margin-bottom: 30px;
         }
 
-        p {
-            color: #666;
+        .contact .container {
+            display: block;
+        }
+
+        .contact .container h2 {
+            color: #36526E;
+            font-size: 25px;
+        }
+
+        .contact .container .infos {
+            display: flex;
+            margin-top: 30px;
+        }
+
+        .contact .container .infos .left {
+            display: block;
+            text-align: left;
+            margin-right: 30px;
+        }
+
+        .contact .container .infos .left b {
+            display: block;
+            text-align: left;
+            margin-top: 10px;
+            text-decoration: bold;
+            color: #808080;
+            font-size: 18px;
+            line-height: 18px;
+        }
+
+        .contact .container .infos .left span {
+            display: block;
+            text-align: left;
+            margin-top: 10px;
+            color: rgba(39, 40, 34, 0.5);
+            font-size: 16px;
+            padding-left: 27px;
+        }
+
+        .contact .container .infos .right {
+            height: 200px;
+        }
+
+        .contact .container .infos .right iframe {
+            width: 100%;
+            height: 100%;
+        }
+
+        /*footer*/
+        .footer {
+            display: flex;
+            justify-content: center;
+            background-color: #191A1E;
+            padding: 30px 0;
         }
     </style>
 </head>
 <body>
-
-    <header>
-        <h1>歡迎來到鸚鵡世界</h1>
-    </header>
-
-    <nav>
-        <a href="#home">首頁</a>
-        <a href="#about">關於鸚鵡</a>
-        <a href="#gallery">圖片集</a>
-        <a href="#info">相關資訊</a>
-        <a href="#contact">聯絡我們</a>
-    </nav>
-
-    <div class="slideshow-container">
-        <div class="mySlides">
-            <img src="https://truth.bahamut.com.tw/s01/202112/a6abe7a51cf87f30f501eed490749b26.JPG" alt="鸚鵡圖片1">
-        </div>
-        <div class="mySlides">
-            <img src="https://img.ltn.com.tw/Upload/playing/page/2020/03/22/200322-22737-08-FwTG5.jpg" alt="鸚鵡圖片2">
-        </div>
-        <div class="mySlides">
-            <img src="https://i1.kknews.cc/A4IUVfhcm3GjlI_Ax6OZhWp3zejrmYYsdnDTHT70kpU0sCVknAjBffZzUYez/0.jpg" alt="鸚鵡圖片3">
+    <div class="top">
+        <div class="container">
+            <div class="logo">
+                
+                鸚鵡介紹
+            </div>
+            <div class="top-nav">
+                <a href="#">首頁</a>
+                <a href="#">關於我們</a>
+                <a href="#">生態</a>
+                <a href="#">預約</a>
+                <a href="#">聯絡我們</a>
+            </div>
         </div>
     </div>
-
-    <section id="home">
-        <h2>歡迎來到鸚鵡的家</h2>
-        <p>在這裡，你將找到有關鸚鵡的豐富資訊和美麗的圖片。</p>
-    </section>
-
-    <section id="about">
-        <h2>關於鸚鵡</h2>
-        <p>鸚鵡是一種智慧、善解人意的寵物，它們有豐富的羽毛色彩和獨特的叫聲。</p>
-    </section>
-
-    <section id="gallery">
-        <h2>圖片集</h2>
-
-        <img src="https://i1.kknews.cc/EtU1sQ9NYSaRzJGNFboH_pMYvQgzb9obCMVAH9XfRxUu5lPTPR02I8YS9sQh/0.jpg" alt="鸚鵡圖片">
- 	<img src="https://i1.kknews.cc/XZHV7__obURxraTJ8LpULuaMQdnb3LPTq7Z7kU2FE8tpo7DczbdtFnUZ55T1/0.jpg" alt="鸚鵡圖片">
- 	<img src="https://i1.kknews.cc/_QST5e5eQZMPOttk8PDPvIU58DURoMXs8qycRFJSkl_ANPCB21sblQy0wMdi/0.jpg" alt="鸚鵡圖片">
-    </section>
-
-    <section id="info">
-        <h2>相關資訊</h2>
-        <p>鸚鵡是一種智慧且社交性強的鳥類，它們屬於鸚鵡目，擁有五彩繽紛的羽毛，並且以其聰明和善解人意的特質而受到人們的喜愛。以下是對鸚鵡的一些基本介紹：
-
-外貌特徵：
-羽毛色彩： 鸚鵡的羽毛色彩豐富多彩，包括紅色、藍色、綠色、黃色等。不同種類的鸚鵡擁有獨特的羽毛顏色和圖案。
-嘴巴： 鸚鵡的嘴巴非常強壯，適合咬斷各種種子、果實和堅果。嘴巴的形狀也因不同種類而異。
-智力和學習能力：
-聰明： 鸚鵡以其高度的智力而聞名，它們能夠學會模仿人類語言、聲音和動作，甚至理解一些簡單的指令。
-學習： 鸚鵡對於學習新技能和表演各種動作都非常敏感，使牠們成為優秀的寵物。
-社交性：
-群體生活： 在野外，鸚鵡通常以群體的方式生活，並展現強烈的社交性。牠們喜歡與同伴一起活動，並在互動中表現出友好和好奇心。
-飲食習慣：
-種子、果實和堅果： 鸚鵡主要以種子、果實和堅果為食，並且在野外會覓食各種植物的果實和種子。
-飼養注意事項：
-社交需求： 由於鸚鵡強烈的社交需求，飼主應該花足夠的時間陪伴牠們，提供豐富的玩具和刺激，以防止孤獨和行為問題。
-均衡飲食： 提供均衡的飲食，包括各種種子、新鮮水果、蔬菜和堅果，以確保鸚鵡獲得足夠的營養。
-總的來說，鸚鵡是極具魅力和活力的寵物，它們可以成為家庭的一員，並帶來歡笑和愉悅。</p>
-    </section>
-
-    <section id="contact">
-        <h2>聯絡我們</h2>
-        <p>有任何問題或建議？請聯絡我們。</p>
-    </section>
-
-    <footer>
-        &copy; 2023 鸚鵡世界 | 現在時間： <span id="current-time"></span>
-    </footer>
-
-    <script>
-        // 顯示當下時間
-        function updateTime() {
-            var currentTime = new Date();
-            var hours = currentTime.getHours();
-            var minutes = currentTime.getMinutes();
-            var seconds = currentTime.getSeconds();
-            document.getElementById('current-time').innerHTML = hours + ':' + minutes + ':' + seconds;
-        }
-
-        setInterval(updateTime, 1000);
-    </script>
-
+    <div class="nav">   
+        <ul>
+            <li><a href="#home">首頁</a></li>
+            <li><a href="#about">關於我們</a></li>
+            <li  class="dropdown"><a href="#cats">鸚鵡介紹</a>
+                <div class="dropdown-content">
+                    <a href="#cat1">虎皮鸚鵡</a>
+                    <a href="#cat2">非洲金剛鸚鵡</a>
+                    <a href="#cat3">巴丹鸚鵡</a>
+                </div>                       
+            </li>
+            <li><a href="#contact">聯絡我們</a></li>
+        </ul>
+    </div>
+    <div class="slider">
+        <div class="flexslider" style="direction:rtl">
+            <ul class="slides">
+                <li><img src="https://img.alicdn.com/imgextra/i2/2200784671760/O1CN0148fmET1Os7dbY8zyn_!!2200784671760-0-daren.jpg">
+                <li><img src="https://img.ltn.com.tw/Upload/news/600/2019/05/08/phpdDAWtR.jpg" /></li>
+                <li><img src="https://i.epochtimes.com/assets/uploads/2018/02/0-09-1711.45.jpg" /></li>
+            </ul>
+        </div>
+    </div>
+    <div class="banner" id="about">
+        <h1>歡迎參觀鸚鵡生態</h1>
+        <h1>一起理解鸚鵡的生態</h1>
+    </div>
+    <div class="cafe" id="cats">
+        <h2>貓咪介紹</h2>
+        <div class="container">
+            <a class="cat" href="">
+                <img src="https://cdn2.ettoday.net/images/6145/6145393.jpg" />
+                <h3>虎皮鸚鵡</h3>
+            </a>
+            <a class="cat" href="">
+                <img src="https://images.pexels.com/photos/162078/african-grey-parrot-parrot-bird-plumage-162078.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" />
+                <h3>非洲鸚鵡</h3>
+            </a>
+            <a class="cat" href="">
+                <img src="https://ext.pimg.tw/whit12242010/4bb595a072f6d.jpg" />
+                <h3>巴丹鸚鵡</h3>
+            </a>        
+        </div>
+    </div>
+    <div class="contact" id="contact">
+        <div class="container">
+            <h2>聯絡我們</h2>
+            <div class="infos">
+                <div class="left">
+                    <b>地址</b>
+                    <span>明新科技大學</span>
+                    <b> 電話:02-12345678</b>
+                    <span>分機:1234、5678、9101</span>
+                    <b> 傳真:02-12345678</b>
+                    <span>分機:9102</span>
+                </div>
+                     <div class="right">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3044.185885150929!2d120.98912333466727!3d24.86332844316392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34683154faa8283b%3A0x92cb1c5564a574ef!2z5piO5paw56eR5oqA5aSn5a24!5e0!3m2!1szh-TW!2stw!4v1536665837954" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+    </div>
 </body>
 </html>
